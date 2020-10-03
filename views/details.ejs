@@ -1,0 +1,26 @@
+<%-include("header")-%>
+    <div class="details">
+
+        <h1 class="tempDetails">Current Temperature:
+            <%=tempDetails.temp%>&#176C</h1>
+
+        <p>The weather is currently
+            <%=tempDetails.description%>
+        </p>
+
+        <img src=<%=tempDetails.imageUrl%>>
+        <div>
+            <h2>Min Temp:
+                <%=tempDetails.min_temp%>&#176C</h2>
+            <h2>Max Temp:
+                <%=tempDetails.max_temp%>&#176C</h2>
+            <h2>Pressure:
+                <%=tempDetails.pressure%>
+            </h2>
+            <h2>Humidity:
+                <%=tempDetails.humidity%>
+            </h2>
+        </div>
+    </div>
+    </body>
+    <%-include("footer")-%>
