@@ -1,23 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather-App</title>
+    <style>
+      *,
+      body {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+      }
 
-</head>
+      .app {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 
-<body style="text-align: center;background-color: aquamarine;">
+        background-color: #8bc6ec;
+        background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+      }
 
-    <h1 style="font-size: 4rem;">Weather</h1>
-    <div style="margin: 10%;">
-        <form action="/" method="post">
-            <label for="cityInput" style="font-size: 2rem;"> City Name: </label>
-            <input id="cityInput" style="margin: 20px; padding: 5px;" ; type="text" name="cityname" placeholder="City Name">
-            <button style="margin: 20px; padding: 5px;" type="Submit">Submit</button>
+      .title {
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        font-weight: normal;
+      }
+      .form-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 20%;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .city-input {
+        text-align: center;
+        font-size: 30px;
+        line-height: 50px;
+        border-radius: 2em;
+        outline: none;
+        font-weight: normal;
+        border: none;
+        margin-bottom: 10px;
+        padding: 5px 45px;
+        background-color: white;
+      }
+      .city-input:hover {
+        cursor: pointer;
+      }
+      .city-input:focus {
+        cursor: text;
+      }
+
+      .button {
+        margin-top: 10px;
+        outline: none;
+        border: none;
+        background-color: rgb(48, 95, 197);
+        color: white;
+        cursor: pointer;
+        font-size: 28px;
+        padding: 10px 15px;
+        border-radius: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <h1 class="title">Weather App</h1>
+      <div class="form-div">
+        <form action="/" method="post" class="form">
+          <!--<label for="cityInput" class="city-label"> City Name: </label>-->
+          <input
+            id="cityInput"
+            class="city-input"
+            type="text"
+            name="cityname"
+            placeholder="Enter City Name"
+          />
+          <button type="Submit" class="button">Submit</button>
         </form>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
