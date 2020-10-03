@@ -1,118 +1,126 @@
 body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
 }
 
 .app {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: #8bc6ec;
-    /* background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%); */
-    background-image: url("../images/bg.jpg");
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #8bc6ec;
+
+  background-image: url("../images/bg.jpg");
 }
 
 .title {
-    margin-top: 5%;
-    font-size: 40px;
-    /* color: white; */
-    color: #40514E;
-    text-align: center;
-    font-weight: normal;
+  margin-top: 5%;
+  font-size: 42px;
+
+  color: #40514e;
+  text-align: center;
+  font-weight: 550;
 }
 
 .form-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 12%;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .city-input {
-    text-align: center;
-    font-size: 30px;
-    line-height: 50px;
-    border-radius: 2em;
-    outline: none;
-    font-weight: normal;
-    border: none;
-    margin-bottom: 10px;
-    padding: 5px 45px;
-    background-color: white;
+  text-align: center;
+  font-size: 30px;
+  line-height: 50px;
+  border-radius: 2em;
+  outline: none;
+  font-weight: normal;
+  border: none;
+  margin-bottom: 10px;
+  padding: 5px 45px;
+  background-color: white;
 }
 
 .city-input:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .city-input:focus {
-    cursor: text;
+  cursor: text;
 }
 
 .button {
-    margin-top: 10px;
-    outline: none;
-    border: none;
-    background-color: rgb(48, 95, 197);
-    color: white;
-    cursor: pointer;
-    font-size: 28px;
-    padding: 10px 15px;
-    border-radius: 2em;
+  margin-top: 15px;
+  outline: none;
+  border: none;
+  background-color: rgb(48, 95, 197);
+  color: white;
+  cursor: pointer;
+  font-size: 28px;
+  padding: 10px 15px;
+  border-radius: 2em;
 }
 
 .details {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: #8bc6ec;
-    /* background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
-     */
-    background-image: url("../images/bg.jpg");
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #8bc6ec;
 
+  background-image: url("../images/bg.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.city-name {
+  font-size: 40px;
+  color: white;
+  font-weight: normal;
+  margin: 50px;
+}
 .tempDetails {
-    font-size: 35px;
-    margin-top: 150px
+  font-size: 35px;
+  margin-top: 45px;
 }
 
 p {
-    font-size: 30px
+  font-size: 30px;
 }
-
+.image {
+  height: 120px;
+  object-fit: contain;
+}
 .description {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 37em;
-    justify-content: space-between;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 35rem;
+  justify-content: space-between;
 }
 
 h2 {
-    font-size: 25px;
-    color: white
+  font-size: 25px;
+  color: white;
 }
