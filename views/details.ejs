@@ -1,6 +1,19 @@
-<%-include("header")-%>
-    <div class="details">
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <div class="details">
+<h1 class="city-name"><%=tempDetails.city_name%></h1>
         <h1 class="tempDetails">Current Temperature:
             <%=tempDetails.temp%>&#176C</h1>
 
@@ -8,8 +21,8 @@
             <%=tempDetails.description%>
         </p>
 
-        <img src=<%=tempDetails.imageUrl%>>
-        <div>
+        <img class="image" src=<%=tempDetails.imageUrl%>>
+        <div class="description">
             <h2>Min Temp:
                 <%=tempDetails.min_temp%>&#176C</h2>
             <h2>Max Temp:
@@ -23,4 +36,5 @@
         </div>
     </div>
     </body>
-    <%-include("footer")-%>
+    </html>
+    
